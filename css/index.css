@@ -1,0 +1,421 @@
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.about {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  background-color: #000;
+  z-index: -1;
+  /* background-image: url('../media/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4; */
+}
+
+.overlay-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.overlay-right {
+  width: 100%;
+  height: 100%;
+}
+
+.pyramid {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-image: url("../media/ball-gray.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  opacity: 0.9;
+  /* animation:pyramid-animation 5s infinite alternate-reverse; */
+  /* transform:rotateZ(30deg); */
+}
+
+@keyframes pyramid-animation {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: translate(5%, 20%);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-section {
+  height: 100vh;
+}
+.link-tags {
+  position: relative;
+  z-index: 999;
+}
+.hero-section i {
+  font-size: 4em;
+  color: #a9a9a9;
+  margin: 40px 40px;
+  cursor: pointer;
+}
+
+/* about section */
+.about-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.about-intro p {
+  color: #a9a9a9;
+  font-size: 5em;
+}
+
+.about-intro {
+  height: 80%;
+  width: 80%;
+}
+
+/* skills section */
+.skill-set span {
+  padding: 3rem 3rem 3rem 0;
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: #a9a9a9;
+  line-height: 1.5;
+}
+.skills {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-image: url("../media/ball-gray.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  margin: 150px 0 200px 0;
+}
+
+.skills .html-image {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+}
+
+.skills .css-image {
+  position: absolute;
+  top: -20%;
+  right: -20%;
+}
+
+.skills .js-image {
+  position: absolute;
+  top: -40%;
+  right: 48%;
+  transform: translate(50%, 0);
+}
+
+.skills .sql-image {
+  position: absolute;
+  bottom: -40%;
+  right: 48%;
+  transform: translate(50%, 0);
+}
+
+.skills .bs-image {
+  position: absolute;
+  top: 25%;
+  right: -60%;
+}
+
+.skills .php-image {
+  position: absolute;
+  top: 30%;
+  left: -50%;
+}
+
+.skills .grid-image {
+  position: absolute;
+  top: 80%;
+  left: -25%;
+}
+
+.skills .shopify-image {
+  position: absolute;
+  top: 80%;
+  right: -35%;
+}
+
+.black-section {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+/* portfolio */
+.portfolio-description {
+  color: white;
+  font-size: 2em;
+}
+
+.portfolio-image {
+  position: relative;
+  width: 100vw;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 80%;
+  z-index: 99;
+}
+
+.portfolio-overlay-pwrfit {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 65%;
+  z-index: 99;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.background-display {
+  opacity: 0.5;
+}
+
+ul {
+  display: block;
+
+  margin: 0;
+}
+
+ul li {
+  font-size: 1em;
+  list-style-type: disc;
+}
+
+.email-link {
+  color: #a9a9a9;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .hero-section i {
+    font-size: 3em;
+    margin: 30px 30px;
+  }
+
+  .about-intro {
+    height: 80%;
+    width: 80%;
+  }
+
+  .about-intro p {
+    font-size: 4em;
+  }
+
+  .about-section {
+    min-height: 50vh;
+  }
+
+  .skills {
+    width: 200px;
+    height: 200px;
+  }
+
+  .html-image,
+  .php-image,
+  .grid-image,
+  .sql-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .js-image,
+  .shopify-image {
+    width: 90px;
+    height: 60px;
+  }
+
+  .css-image {
+    width: 35px;
+    height: 50px;
+  }
+  .php-image {
+    width: 60px;
+    height: 40px;
+  }
+
+  .bs-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-overlay {
+    top: 20%;
+  }
+
+  .portfolio-overlay-pwrfit {
+    top: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section i {
+    font-size: 2em;
+    margin: 20px 20px;
+  }
+
+  .portfolio-overlay {
+    top: 30%;
+  }
+
+  .portfolio-overlay-pwrfit {
+    top: 50%;
+  }
+
+  .about-intro p {
+    font-size: 2.5rem;
+  }
+
+  .pyramid {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skills .html-image {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+  }
+
+  .skills .css-image {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+  }
+
+  .skills .js-image {
+    position: absolute;
+    top: -40%;
+    right: 52%;
+  }
+
+  .skills .sql-image {
+    position: absolute;
+    bottom: -30%;
+    right: 55%;
+    transform: translate(50%, 0);
+  }
+
+  .skills .bs-image {
+    position: absolute;
+    top: 30%;
+    right: -45%;
+  }
+
+  .skills .php-image {
+    position: absolute;
+    top: 35%;
+    left: -40%;
+  }
+
+  .skills .grid-image {
+    position: absolute;
+    top: 70%;
+    left: -15%;
+  }
+
+  .skills .shopify-image {
+    position: absolute;
+    top: 70%;
+    right: -25%;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills {
+    width: 150px;
+    height: 150px;
+  }
+
+  .html-image,
+  .bs-image,
+  .php-image,
+  .grid-image,
+  .sql-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .js-image,
+  .shopify-image {
+    width: 80px;
+    height: 50px;
+  }
+
+  .css-image {
+    width: 35px;
+    height: 50px;
+  }
+  .php-image {
+    width: 50px;
+    height: 35px;
+  }
+
+  .bs-image {
+    width: 70px;
+    height: 70px;
+  }
+}

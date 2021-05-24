@@ -109,6 +109,148 @@ p {
   width: 80%;
 }
 
+.skill-icon {
+  /* max-width: 80%;
+  margin: auto; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -4rem;
+}
+
+.fab,
+.fas {
+  color: white;
+  font-size: 4.5em;
+  position: relative;
+  padding: 4rem 3.5rem 0rem 2rem;
+  transition: color 0.4s ease;
+}
+
+.fab:hover,
+.fas:hover {
+  color: #a9a9a9;
+}
+
+.fa-html5::after {
+  content: "HTML5";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+
+.fa-css3-alt::after {
+  content: "CSS3";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-sass::after {
+  content: "SASS";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-bootstrap::after {
+  content: "BOOTSTRAP";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-js-square::after {
+  content: "JAVASCRIPT";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-js-square::after {
+  content: "JAVASCRIPT";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-js-square::after {
+  content: "JAVASCRIPT";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-react::after {
+  content: "REACT";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-php::after {
+  content: "PHP";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-database::after {
+  content: "MYSQL";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-git-square::after {
+  content: "GIT";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-shopify::after {
+  content: "SHOPIFY";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.fa-wordpress::after {
+  content: "WORDPRESS";
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+
 /* skills section */
 .skill-set span {
   padding: 3rem 3rem 3rem 0;
@@ -193,7 +335,7 @@ p {
 
 .portfolio-image {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 .portfolio-overlay {
@@ -220,6 +362,46 @@ p {
   width: 100%;
   height: auto;
   object-fit: contain;
+  position: relative;
+}
+
+.pwrfit-hover {
+  position: absolute;
+  width: 0;
+
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 999999999;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.hover-content {
+  position: absolute;
+  max-width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999999;
+  opacity: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.hover-content h1 {
+  font-size: 6rem;
+}
+
+.display-hover-content {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .background-display {

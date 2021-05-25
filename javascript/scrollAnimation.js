@@ -83,19 +83,19 @@ gsap.to(".pyramid", {
   // yoyo:true,
   motionPath: {
     path: [
-      { x: 10, y: 200 },
-      { x: 50, y: 250 },
-      { x: 100, y: 280 },
-      { x: 150, y: 290 },
-      { x: 180, y: 300 },
-      { x: 200, y: 400 },
-      { x: 500, y: 600 },
-      { x: 300, y: 650 },
-      { x: 100, y: 700 },
-      { x: -200, y: 800 },
-      { x: -300, y: 850 },
-      { x: -600, y: 1000 },
-      { x: 0, y: 1200 },
+      { x: -10, y: 800 },
+      // { x: 50, y: 250 },
+      { x: -700, y: 1480 },
+      { x: -350, y: 1600 },
+      { x: -680, y: 1850 },
+      // { x: -200, y: 600 },
+      // { x: -500, y: 600 },
+      // { x: 300, y: 650 },
+      { x: -1000, y: 1900 },
+      { x: -500, y: 2000 },
+      // { x: -300, y: 850 },
+      { x: -200, y: 2500 },
+      { x: 0, y: 3000 },
       // {x:-100,y:1200},
 
       // {x:-800,y:1550},
@@ -381,6 +381,18 @@ gsap.to(".project-five", {
   y: -100,
   scrollTrigger: {
     trigger: ".project-five-trigger",
+    start: "top 2%",
+    end: "bottom 100%",
+    scrub: 3,
+  },
+});
+
+gsap.to(".project-six", {
+  duration: 5,
+
+  y: -100,
+  scrollTrigger: {
+    trigger: ".project-six-trigger",
     start: "top 2%",
     end: "bottom 100%",
     scrub: 3,

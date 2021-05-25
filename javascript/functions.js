@@ -2,11 +2,15 @@ const displayHoverElement = () => {
   const hoverElement = document.querySelectorAll(".pwrfit-hover");
   const portfolioImage = document.querySelectorAll(".portfolio-image");
   const hoverContent = document.querySelectorAll(".hover-content");
-  console.dir(hoverContent);
+
   var content = [
     {
       title: "Pwrfit Studios",
       languages: "HTML, CSS, JAVASCRIPT, JQUERY, AJAX, STRIPE API, PHP, MYSQL",
+    },
+    {
+      title: "YouTube Search API",
+      languages: "REACT, HTML, CSS, AXIOS, SEMANTIC UI, YOUTUBE API",
     },
     {
       title: "Digicreate",
@@ -31,7 +35,6 @@ const displayHoverElement = () => {
   ];
 
   portfolioImage.forEach((image, index) => {
-    console.log(index);
     image.addEventListener("mouseover", () => {
       hoverElement[index].classList.add("full-width");
       hoverContent[index].classList.add("display-hover-content");

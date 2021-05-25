@@ -60,7 +60,7 @@ p {
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  z-index: 9999;
+  z-index: 9;
   opacity: 0.9;
   /* animation:pyramid-animation 5s infinite alternate-reverse; */
   /* transform:rotateZ(30deg); */
@@ -82,15 +82,22 @@ p {
 .hero-section {
   height: 100vh;
 }
+.resume {
+  position: relative;
+  z-index: 9999999999;
+}
 .link-tags {
   position: relative;
-  z-index: 999;
+  z-index: 999999;
 }
 .hero-section i {
   font-size: 4em;
   color: #a9a9a9;
-  margin: 40px 40px;
+  margin: 2rem 0.2rem;
   cursor: pointer;
+}
+.hero-section i:hover {
+  color: #dcdcdc;
 }
 
 /* about section */
@@ -109,146 +116,41 @@ p {
   width: 80%;
 }
 
+.three-column-grid-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.skill-text p {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.skill-text i {
+  max-width: 100%;
+  margin: auto;
+}
+
 .skill-icon {
   /* max-width: 80%;
   margin: auto; */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: -4rem;
+
+  margin-top: -2rem;
 }
 
 .fab,
 .fas {
   color: white;
-  font-size: 4.5em;
+  font-size: 4em;
   position: relative;
-  padding: 4rem 3.5rem 0rem 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   transition: color 0.4s ease;
 }
 
 .fab:hover,
 .fas:hover {
   color: #a9a9a9;
-}
-
-.fa-html5::after {
-  content: "HTML5";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-
-.fa-css3-alt::after {
-  content: "CSS3";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-sass::after {
-  content: "SASS";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-bootstrap::after {
-  content: "BOOTSTRAP";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-js-square::after {
-  content: "JAVASCRIPT";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-js-square::after {
-  content: "JAVASCRIPT";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-js-square::after {
-  content: "JAVASCRIPT";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-react::after {
-  content: "REACT";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-php::after {
-  content: "PHP";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-database::after {
-  content: "MYSQL";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-git-square::after {
-  content: "GIT";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-shopify::after {
-  content: "SHOPIFY";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
-}
-.fa-wordpress::after {
-  content: "WORDPRESS";
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  position: absolute;
-  top: 105%;
-  left: 45%;
-  transform: translateX(-50%);
 }
 
 /* skills section */
@@ -258,67 +160,6 @@ p {
   font-size: 3rem;
   color: #a9a9a9;
   line-height: 1.5;
-}
-.skills {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background-image: url("../media/ball-gray.png");
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
-  margin: 150px 0 200px 0;
-}
-
-.skills .html-image {
-  position: absolute;
-  top: -20%;
-  left: -20%;
-}
-
-.skills .css-image {
-  position: absolute;
-  top: -20%;
-  right: -20%;
-}
-
-.skills .js-image {
-  position: absolute;
-  top: -40%;
-  right: 48%;
-  transform: translate(50%, 0);
-}
-
-.skills .sql-image {
-  position: absolute;
-  bottom: -40%;
-  right: 48%;
-  transform: translate(50%, 0);
-}
-
-.skills .bs-image {
-  position: absolute;
-  top: 25%;
-  right: -60%;
-}
-
-.skills .php-image {
-  position: absolute;
-  top: 30%;
-  left: -50%;
-}
-
-.skills .grid-image {
-  position: absolute;
-  top: 80%;
-  left: -25%;
-}
-
-.skills .shopify-image {
-  position: absolute;
-  top: 80%;
-  right: -35%;
 }
 
 .black-section {
@@ -425,13 +266,35 @@ ul li {
   text-decoration: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
+  .hover-content {
+    max-width: 80%;
+  }
+
+  .hover-content h1 {
+    font-size: 4rem;
+  }
+
+  .hover-content p {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 992px) {
 }
 
 @media (max-width: 768px) {
+  .hover-content {
+    max-width: 90%;
+  }
+
+  .hover-content h1 {
+    font-size: 3rem;
+  }
+
+  .hover-content p {
+    font-size: 1.5rem;
+  }
   .hero-section i {
     font-size: 3em;
     margin: 30px 30px;
@@ -494,9 +357,23 @@ ul li {
 }
 
 @media (max-width: 576px) {
+  .three-column-grid-skills {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hover-content {
+    max-width: 100%;
+  }
+
+  .hover-content h1 {
+    font-size: 2rem;
+  }
+
+  .hover-content p {
+    font-size: 1rem;
+  }
   .hero-section i {
     font-size: 2em;
-    margin: 20px 20px;
+    margin: 20px 10px;
   }
 
   .portfolio-overlay {
